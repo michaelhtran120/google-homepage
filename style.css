@@ -7,7 +7,7 @@ body {
     flex-shrink: 0;
     box-sizing: border-box;
 }
-/* Navigation Style */
+/* Navigation Section Start */
 .navigation-bar {
     display: flex;
     align-items: center;
@@ -56,6 +56,10 @@ body {
     text-decoration: none;
     align-self: center;
 }
+.nav-button:hover{
+    text-decoration:underline;
+
+}
 #sign-in-button {
     padding: 9px 23px;
     margin: 0px 8px;
@@ -66,21 +70,97 @@ body {
     border: 1px solid transparent;
     border-radius: 5px;
 }
+#sign-in-button:hover {
+    text-decoration: none;
+    background-color: #2b7de9;
+    box-shadow: 
+    0 1px 2px 0 rgb(66 133 244 / 30%)
+    0 1px 3px 1px rgb(66 133 244/ 15%);
+}
 /* Navigation Style End */
 
-/* Logo Section */
+/* Logo Section Start */
 .logo-section{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     min-height: 150px;
     max-height: 290px;
     height: calc(100%-560px);
 }
 .logo{
-    width:400px;
-    height: 220px;
+    width: auto;
+    height: auto;
     align-self: center;
     margin-top: 150px;
-    margin-left: 90px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Logo Section End*/
+
+/*Search Bar Start */
+
+.search-section {
+    display: block;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 160px;
+}
+.search-bar-area {
+    display: flex;
+    flex-direction: column;
+    width: 584px;
+}
+.search-bar {
+    display: flex;
+    flex: 1 1 auto;
+    border: 1px solid lightgrey;
+    border-radius: 50px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding: 6px 0px 0px;
+    height: 44px;
+    width: auto;
+}
+.search-icon {
+    flex:0 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.search-input {
+    flex: 100%;
+    height: 34px;
+    margin-top: -5px;
+
+}
+.voice-icon {
+    flex: 0 0 auto;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.search-button-area {
+    display: flex;
+    justify-content: center;
+    padding-top: 18px;
+}
+.submit-button{
+    padding: 15px 30px;
+    margin: 11px 10px;
+    font-size: 14px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+}
+.submit-button:hover {
+    box-shadow:
+    0 1px 1px rgb(0 0 0 / 10%);
+    border: 1px solid #dadce0;
+    color: #202124;
+    background-color: #f8f9fa
 }
